@@ -37,7 +37,7 @@
 }
 ```
 
->Excellent! Now get a list of resources in Azure.  For more information: https://learn.microsoft.com/en-us/cli/azure/group?view=azure-cli-latest
+>Excellent! Now get a list of resources in Azure.  For more information: [https://learn.microsoft.com/en-us/cli/azure/group?view=azure-cli-latest](https://learn.microsoft.com/en-us/cli/azure/group?view=azure-cli-latest)
 
 `~$ az group list`
 
@@ -65,18 +65,18 @@
 ```
 
 > Ok, now use one of the resource groups to get a list of function apps. For more information:
-(https://learn.microsoft.com/en-us/cli/azure/functionapp?view=azure-cli-latest)[https://learn.microsoft.com/en-us/cli/azure/functionapp?view=azure-cli-latest]
+[https://learn.microsoft.com/en-us/cli/azure/functionapp?view=azure-cli-latest](https://learn.microsoft.com/en-us/cli/azure/functionapp?view=azure-cli-latest)
 Note: Some of the information returned from this command relates to other cloud assets used by Santa and his elves.
 
 `~$ az functionapp list –-resource-group northpole-rg1`
 
 >Find a way to list the only VM in one of the resource groups you have access to.
->For more information: (https://learn.microsoft.com/en-us/cli/azure/vm?view=azure-cli-latest)[https://learn.microsoft.com/en-us/cli/azure/vm?view=azure-cli-latest]
+>For more information: [https://learn.microsoft.com/en-us/cli/azure/vm?view=azure-cli-latest](https://learn.microsoft.com/en-us/cli/azure/vm?view=azure-cli-latest)
 
 `~$ az vm list –g northpole-rg2`
 
 >Find a way to invoke a run-command against the only Virtual Machine (VM) so you can RunShellScript and get a directory listing to reveal a file on the Azure VM.
->For more information: (https://learn.microsoft.com/en-us/cli/azure/vm/run-command?view=azure-cli-latest#az-vm-run-command-invoke)[https://learn.microsoft.com/en-us/cli/azure/vm/run-command?view=azure-cli-latest#az-vm-run-command-invoke]
+>For more information: [https://learn.microsoft.com/en-us/cli/azure/vm/run-command?view=azure-cli-latest#az-vm-run-command-invoke](https://learn.microsoft.com/en-us/cli/azure/vm/run-command?view=azure-cli-latest#az-vm-run-command-invoke)
 
 `~$ az vm run-command invoke -g northpole-rg2 -n NP-VM1 –comand-id RunShellScript –scripts ‘ls’`
 
