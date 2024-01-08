@@ -6,7 +6,7 @@
 
 ## HINTS: ##
 <details>
-  <summary>Hints provided for Objective 13</summary>
+  <summary>Hints provided for Objective 14</summary>
   
 >-	-	Discover the essentials of email security with DMARC, DKIM,a nd SPF at [Cloudflare’s Guide](https://www.cloudflare.com/en-gb/learning/email-security/dmarc-dkim-spf/).
 </details>
