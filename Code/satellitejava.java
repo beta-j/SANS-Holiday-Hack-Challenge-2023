@@ -1,4 +1,4 @@
-//code retrieved from 
+//code retrieved from NanoSat MO Base Station Tool 
 
 import java.io.Serializable;
 import java.io.IOException;
