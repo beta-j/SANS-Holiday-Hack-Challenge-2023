@@ -50,7 +50,7 @@ elf
 
 Just to be sure we can check whether it is possible to edit the monitor principal to give us admin user access, but we do not have sufficient rights to edit the file and we’ll need to be a bit craftier.
 
-So, let’s see what we can learn about the Azure server we’re on.  There is no Azure CLI available but as the hints kindly suggest we can use Azure REST API calls instead. By running the following command, we can retrieve the Azure Instance Metadata (IMDS)[^1] :
+So, let’s see what we can learn about the Azure server we’re on.  There is no Azure CLI available but as the hints kindly suggest we can use Azure REST API calls instead. By running the following command, we can retrieve the [Azure Instance Metadata (IMDS)](https://learn.microsoft.com/en-us/azure/virtual-machines/instance-metadata-service?tabs=linux):
 ```
 $ curl -s -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq
 ```
@@ -82,14 +82,22 @@ From the output of this command we learn that the function app is being deployed
 
 The most interesting part of the code is that when the app receives an `HTTP POST` request it looks for the `principal` value in the input JSON – if it is not found it will set it to a default value `DEFAULT_PRINCIPAL`.  If only we could pass on a value for prinicpal ourselves!
 
-I decided to use OWASP ZAP (Zed Attack Proxy) which I learned about in the [Reportinator Challenge]/ for this next step.  ZAP makes it easy to intercept and modify HTTP requests, so it was just a matter of loading the certificate-generating website in ZAP, submitting my public key in the corresponding field and then intercepting the HTTP POST request and just added “principal”:”admin” to the JSON in it before forwarding it.  The website immediately replies with our new certificate and we can see that the principal for the certificate is now ‘admin’.
+I decided to use OWASP ZAP (Zed Attack Proxy) which I learned about in the Reportinator Challenge for this next step.  
+ZAP makes it easy to intercept and modify HTTP requests, so it was just a matter of loading the certificate-generating website in ZAP, submitting my public key in the corresponding field and then intercepting the `HTTP POST` request and just added `“principal”:”admin”` to the JSON in it before forwarding it.  The website immediately replies with our new certificate and we can see that the principal for the certificate is now `admin`.
 
-Now we need to repeat the initial steps of this challenge with the new certificate to be able to log in as ‘alabaster’:
--	Copy the certificate to a file called SSHCert_admin.pub
--	Chmod 600 SSHCert_admin.pub
--	Log in to the server using the ‘alabaster’ username: 
-ssh -i ca -i SSHCert_admin.pub alabaster@ssh-server-vm.santaworkshopgeeseislands.org
-That’s it! We now have admin access to the server, and we can see alabaster’s to-do list in his home folder, from which we find out that he intends to implement a “Gingerbread Cookie Cache”.
+![image](https://github.com/beta-j/SANS-Holiday-Hack-Challenge-2023/assets/60655500/286e5959-fa67-4789-853c-ba072ae8060e)
+
+
+Now we need to repeat the initial steps of this challenge with the new certificate to be able to log in as `alabaster`:
+-	Copy the certificate to a file called `SSHCert_admin.pub`
+-	`Chmod 600 SSHCert_admin.pub`
+-	Log in to the server using the `alabaster` username:
+  
+    ``ssh -i ca -i SSHCert_admin.pub alabaster@ssh-server-vm.santaworkshopgeeseislands.org``
+ 	
+That’s it! We now have admin access to the server, and we can see alabaster’s to-do list in his home folder, from which we find out that he intends to implement a **“Gingerbread Cookie Cache”**.
+
+```
 ~$ cat alabaster_todo.md 
 # Geese Islands IT & Security Todo List
 
@@ -100,6 +108,4 @@ That’s it! We now have admin access to the server, and we can see alabaster’
 - [ ] Gingerbread Cookie Cache: Implement a gingerbread cookie caching mechanism to speed up data retrieval times. Don't let Santa eat the cache!
 - [ ] Toy Workshop VPN: Establish a secure VPN tunnel back to the main toy workshop so the elves can securely access to the toy blueprints.
 - [ ] Festive 2FA: Roll out the new two-factor authentication system where the second factor is singing a Christmas carol. Jingle Bells is said to be the most secure.
- 
-
-[^1]: [https://learn.microsoft.com/en-us/azure/virtual-machines/instance-metadata-service?tabs=linux ](https://learn.microsoft.com/en-us/azure/virtual-machines/instance-metadata-service?tabs=linux )
+```
