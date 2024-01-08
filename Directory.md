@@ -14,7 +14,7 @@ Ginger Breadie	| Christmas Island	| Frosty’s Beach – Santa’s Surf Shack
 Henry |	Space Island |	Zenith SGS
 Jewel Logins |	Space Island |	Spaceport Point
 Jingle Ringford |	Christmas Island |	Orientation
-Marcel Nougat |	Christmas Island |	Frosty’s Beach
+Marcel Nougat |	Christmas Island |	[Frosty’s Beach](Maps/Christmas Island/Frostys Beach.png)
 Noel Boetie	| Christmas Island |	Rudolph’s rest
 Pepper Minstix |	Christmas Island |	Resort Lobby
 Piney Sappington |	Pixel Island |	Rainraster Cliffs
