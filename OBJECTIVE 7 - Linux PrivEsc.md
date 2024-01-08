@@ -6,7 +6,7 @@
 
 ## HINTS: ##
 <details>
-  <summary>Hints provided for Objective 5</summary>
+  <summary>Hints provided for Objective 7</summary>
   
 >-  There's [various ways](https://payatu.com/blog/a-guide-to-linux-privilege-escalation/) to escalate privileges on a Linux system.
 >-	Using the privileged binary to overwrite a file to escalate privileges could be a solution, but there's an easier method if you pass it a crafty argument.
