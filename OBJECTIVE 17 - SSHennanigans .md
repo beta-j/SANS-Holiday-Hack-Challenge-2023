@@ -6,7 +6,7 @@
 
 ## HINTS: ##
 <details>
-  <summary>Hints provided for Objective 16</summary>
+  <summary>Hints provided for Objective 17</summary>
   
 >-	Azure CLI tools aren't always available, but if you're on an Azure VM you can always use the [Azure REST API](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/how-to-use-vm-token) instead.
 >-	The [get-source-control](https://learn.microsoft.com/en-us/rest/api/appservice/web-apps/get-source-control?view=rest-appservice-2022-03-01) Azure REST API endpoint provides details about where an Azure Web App or Function App is deployed from.
