@@ -6,7 +6,7 @@
 
 ## HINTS: ##
 <details>
-  <summary>Hints provided for Objective 11</summary>
+  <summary>Hints provided for Objective 12</summary>
   
 >-  Try to outsmart Shifty by sending him an error he may not understand.
 >-	Shifty said his deck of cards is made with Python. Surely there's a [weakness](https://www.tenable.com/blog/python-nan-injection) to give you the upper hand in his game.
