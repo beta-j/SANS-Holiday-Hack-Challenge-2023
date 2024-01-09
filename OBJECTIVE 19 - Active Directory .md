@@ -104,7 +104,7 @@ The resulting output gives us tons of useful information.  Including the AD doma
 
 `  $DCIP =` **`10.0.0.53`**
 
-Armed with this information we can start using the tools found in Alabaster’s directory.  We can start with **Certipy** with the `find -vulnerable` command (as conveniently suggested in **OBJECTIVE 4 – Reportinator**).  Watch-out for the escape character before the "`" in the password.
+Armed with this information we can start using the tools found in Alabaster’s directory.  We can start with **Certipy** with the `find -vulnerable` command (as conveniently suggested in [OBJECTIVE 4 – Reportinator](OBJECTIVE%2004%20-%20Reportinator%20.md)).  Watch-out for the escape character before the "`" in the password.
 ```
 certipy find -vulnerable -dc-ip 10.0.0.53 -target northpole.local -u elfy@northpole.local -p "J4\`ufC49/J4766"
 ```
