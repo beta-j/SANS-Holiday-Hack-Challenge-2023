@@ -32,7 +32,10 @@ The script also outputs the result to console (probably a left-over artefact fro
 We can now download the rom files for the game from the following URLS:
 
 [https://gamegosling.com/vol2-akHB27gg6pN0/rom/game0.gb](https://gamegosling.com/vol2-akHB27gg6pN0/rom/game0.gb)
+
 [https://gamegosling.com/vol2-akHB27gg6pN0/rom/game1.gb](https://gamegosling.com/vol2-akHB27gg6pN0/rom/game1.gb)
+
+Copies may also be found here:  [game0](Assets/Vol2%20-%20game0.gb)  and [game1](Assets/Vol2%20-%20game1.gb)
 
 If necessary, the webpage with the game can be reloaded several times until the console shows `rom/game0.gb` or `rom/game1.gb` depending on which version of the game we want to test.
 
