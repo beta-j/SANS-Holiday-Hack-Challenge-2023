@@ -85,7 +85,7 @@ MIIEvgIBADANBgk...
 -----END PRIVATE KEY-----
 ```
 
-Armed with the Public/Private key pair we can use [jwt.io](https://jwt.io) to create a new JWT for the administrator role.  We just need to guess at what that role might be called.  There are plenty of hints for this in the Captain’s Journal which lead us to understnd that the administrator’s role is called `GeeseIslandsSuperChiefCommunicationsOfficer`.
+Armed with the Public/Private key pair we can use [jwt.io](https://jwt.io) to create a new JWT for the administrator role.  We just need to guess at what that role might be called.  There are plenty of hints for this in the [Captain’s Log](Assets/captains-Log.png) which lead us to understnd that the administrator’s role is called `GeeseIslandsSuperChiefCommunicationsOfficer`.
 
 Using jwt.io create, encode and sign the following token:
 ```
