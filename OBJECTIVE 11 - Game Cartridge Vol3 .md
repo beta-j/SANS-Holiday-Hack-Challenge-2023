@@ -19,9 +19,9 @@
 
 ## PROCEDURE : ##
 
-Just like what we did in Game Cartridge Vol 1, we can look at the source code to see a global constant defined as const `ROM_FILENAME = "rom/game.gb"`;  This tells us that the game’s ROM file can be downloaded from the `/rom/game.gb` directory at the following URL: [https://gamegosling.com/vol3-7bNwQKGBFNGQT1/rom/game.gb](https://gamegosling.com/vol3-7bNwQKGBFNGQT1/rom/game.gb)
+Just like what we did in [Game Cartridge Vol 1](OBJECTIVE%2009%20-%20Game%20Cartridge%20Vol%201%20.md), we can look at the source code to see a global constant defined as const `ROM_FILENAME = "rom/game.gb"`;  This tells us that the game’s ROM file can be downloaded from the `/rom/game.gb` directory at the following URL: [https://gamegosling.com/vol3-7bNwQKGBFNGQT1/rom/game.gb](https://gamegosling.com/vol3-7bNwQKGBFNGQT1/rom/game.gb)
 
-Once we have the ROM file we can load into a GameBoy Emulator ([I used BGB for this](https://bgb.bircd.org/)) which lets us look at the values stored in the game’s memory and also allows us to save and load the game’s state making it a lot easier to get through the game.  
+Once we have the [ROM file](Assets/Vol3%20-%20game.gb) we can load into a GameBoy Emulator ([I used BGB for this](https://bgb.bircd.org/)) which lets us look at the values stored in the game’s memory and also allows us to save and load the game’s state making it a lot easier to get through the game.  
 
 The [BGB website has an extremely useful guide](https://bgb.bircd.org/manual.html#cheats) for this bit.
 
