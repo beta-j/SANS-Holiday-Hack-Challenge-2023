@@ -15,7 +15,7 @@
 #  
 
 ## PROCEDURE : ##
-Now that we are logged in as alabaster (after complecting **OBJECTIVE 17 - Certificate SSHennanigans**), we can go ahead and request an Azure access token for our new user:
+Now that we are logged in as alabaster (after complecting [OBJECTIVE 17 - Certificate SSHennanigans](OBJECTIVE%2017%20-%20SSHennanigans%20.md)), we can go ahead and request an Azure access token for our new user:
 ```
 curl 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2021-02-01&resource=https://management.azure.com/' -H Metadata:true -s | jq
 ```
