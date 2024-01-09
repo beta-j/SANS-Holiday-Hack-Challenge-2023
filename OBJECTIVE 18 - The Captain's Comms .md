@@ -21,7 +21,7 @@
 
 By intercepting in **BURP** we can see the value of a Bearer token in an authorization header:  `Authorizaion: Bearer eyJhbG.....`
 
-From the **Just Watch This: Owner’s Card** we also learn that the `radioMonitor` role token is stored in `/jwtDefault/rMonitor.tok` which we can retrieve using `curl` and the bearer token we just got:
+From the [Just Watch This: Owner’s Card](Assets/ownCard.png) we also learn that the `radioMonitor` role token is stored in `/jwtDefault/rMonitor.tok` which we can retrieve using `curl` and the bearer token we just got:
 
 ```
 curl https://captainscomms.com/jwtDefault/rMonitor.tok -H "Authorization: Bearer eyJhb..."
@@ -103,7 +103,9 @@ Using jwt.io create, encode and sign the following token:
 ```
 
 Once again, we replace the contents of `justWatchThisCookie` with the newly crafted JWT and we are able to use the transmitter.
-From the RadioFax transmission we know that the Frequency is `10426Hz`.  The Go-Time and Date are probably what is being transmitted by the numbers station, i.e. `12/24` and `16:00`.  Since we are instructed (in the Background narrative) to transmit a time that is four hours earlier, we transmit the following values: **`Freq: 10426Hz / Date: 1224 / Time: 1200`**
+From the RadioFax transmission we know that the Frequency is `10426Hz`.  The Go-Time and Date are probably what is being transmitted by the numbers station, i.e. `12/24` and `16:00`.  Since we are instructed (in the [Background Instructions](Assets/Background_Instructions.png)) to transmit a time that is four hours earlier, we transmit the following values: 
+
+**`Freq: 10426Hz / Date: 1224 / Time: 1200`**
 
 And that successfully completes this challenge.
 
