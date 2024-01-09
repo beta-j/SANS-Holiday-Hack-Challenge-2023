@@ -15,6 +15,6 @@
 
 ## PROCEDURE : ##
 
->This one is a bit hard to describe here – but basically, it’s just a matter of following the instructions given by Chris Elgee in his talk.
+This one is a bit hard to describe here – but basically, it’s just a matter of following the instructions given by [Chris Elgee in his talk](https://www.youtube.com/watch?v=ycM1hBSEyog).
 Apply a little pressure on the unlock button (around 2 clicks) and turn the wheels one by one until they get stuck and that’s it.
 
