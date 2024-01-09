@@ -5,4 +5,5 @@ Here is my write-up for [The 2023 SANS Holiday Hack Challenge: A Holiday Odyssey
 Readers with a strong background in Cyber-Security will probably want to skip through Objectives 1-12 and start off at [OBJECTIVE 13 - KQL Kraken Hunt](https://github.com/beta-j/SANS-Holiday-Hack-Challenge-2023/blob/main/OBJECTIVE%2013%20-%20KQL%20Kraken%20Hunt%20.md) 
 Objectives tend to be more challenging as you progress.
 
-![image](https://github.com/beta-j/SANS-Holiday-Hack-Challenge-2023/assets/60655500/90d6859c-7f3f-4a09-ba19-7035a5a4d30d)
+![image](https://github.com/beta-j/SANS-Holiday-Hack-Challenge-2023/assets/60655500/f3045765-342b-44b2-9d58-8fa3c4efb36b)
+
