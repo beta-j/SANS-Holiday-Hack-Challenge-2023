@@ -11,3 +11,58 @@ This was my sixth time participating in the Holiday Hack Challenge and the fourt
 
 ![image](https://github.com/beta-j/SANS-Holiday-Hack-Challenge-2023/assets/60655500/f3045765-342b-44b2-9d58-8fa3c4efb36b)
 
+#  
+#  
+
+## TABLE OF CONTENTS: ##
+
+[Directory](_Directory.md)
+
+[Narrative](_Narrative%20.md)
+
+[OBJECTIVE 1 - Holiday Hack Orientation](OBJECTIVE%201%20-%20Holiday%20Hack%20Orientation%0D%0A)
+
+[OBJECTIVE 2 - Snowball Hero](OBJECTIVE%202%20-%20Snowball%20Hero%0D%0A)
+
+[OBJECTIVE 3 - Linux 101](OBJECTIVE%2003%20-%20Linux%20101%20.md)
+
+[OBJECTIVE 4 - Reportinator](OBJECTIVE%2004%20-%20Reportinator%20.md)
+
+[OBJECTIVE 5 - Azure 101](OBJECTIVE%2005%20-%20Azure%20101%20.md)
+
+[OBJECTIVE 6 - Luggage Lock](OBJECTIVE%2006%20-%20Luggage%20Lock%20.md)
+
+[OBJECTIVE 7 - Linux PrivEsc](OBJECTIVE%2007%20-%20Linux%20PrivEsc%20.md)
+
+[OBJECTIVE 8 - Faster Lock Combination](OBJECTIVE%2008%20-%20Faster%20Lock%20Combination%20.md)
+
+[OBJECTIVE 9 - Game Cartridge Vol 1](OBJECTIVE%2009%20-%20Game%20Cartridge%20Vol%201%20.md)
+
+[OBJECTIVE 10 - Game Cartridge Vol 2](OBJECTIVE%2010%20-%20Game%20Cartridge%20Vol%202%20.md)
+
+[OBJECTIVE 11 - Game Cartridge Vol 3](OBJECTIVE%2011%20-%20Game%20Cartridge%20Vol3%20.md)
+
+[OBJECTIVE 12 - Na'an](OBJECTIVE%2012%20-%20Na'an%20.md)
+
+[OBJECTIVE 13 - KQL Kraken Hunt](OBJECTIVE%2013%20-%20KQL%20Kraken%20Hunt%20.md)
+
+[OBJECTIVE 14 - Phish Detection Agency](OBJECTIVE%2014%20-%20Phish%20Detection%20Agency%20.md)
+
+[OBJECTIVE 15 - Hashcat](OBJECTIVE%2015%20-%20Hashcat%20.md)
+
+[OBJECTIVE 16 - Elf Hunt](OBJECTIVE%2016%20-%20Elf%20Hunt%20.md)
+
+[OBJECTIVE 17 - SSHennanigans](OBJECTIVE%2017%20-%20SSHennanigans%20.md)
+
+[OBJECTIVE 18 - The Captain's Comms](OBJECTIVE%2018%20-%20The%20Captain's%20Comms%20.md)
+
+[OBJECTIVE 19 - Active Directory](OBJECTIVE%2019%20-%20Active%20Directory%20.md)
+
+[OBJECTIVE 20 - Space Island Door Speaker](OBJECTIVE%2020%20-%20Space%20Island%20Door%20Speaker%20.md)
+
+[OBJECTIVE 21 - Camera Access](OBJECTIVE%2021%20-%20Camera%20Access%20.md)
+
+[OBJECTIVE 22 - Missile Diversion](OBJECTIVE%2022%20-%20Missile%20Diversion%20.md)
+
+[Ending Epilogue & Thanks](_ENDING%20EPILOGUE%20&%20THANKS%20.md)
+
