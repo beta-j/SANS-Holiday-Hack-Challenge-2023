@@ -1,5 +1,5 @@
 # OBJECTIVE 19 - Active Directory #
-
+_Completed by 3.03% of challenge participants_
 ## OBJECTIVE : ##
 >Go to Steampunk Island and help Ribb Bonbowford audit the Azure AD environment. What's the name of the secret file in the inaccessible folder on the *FileShare*?
 #  
