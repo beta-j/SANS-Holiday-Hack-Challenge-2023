@@ -1,5 +1,5 @@
 # OBJECTIVE 9 - Game Cartridge Vol 1 #
-
+_Completed by 5.73% of challenge participants_
 ## OBJECTIVE : ##
 >Find the first Gamegosling cartridge and beat the game.
 #  
