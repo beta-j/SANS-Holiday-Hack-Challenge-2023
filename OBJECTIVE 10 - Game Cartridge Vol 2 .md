@@ -1,5 +1,5 @@
 # OBJECTIVE 10 - Game Cartridge Vol 2 #
-
+_Completed by 2.72% of challenge participants_
 ## OBJECTIVE : ##
 >Find the second Gamegosling cartridge and beat the game.
 #  
