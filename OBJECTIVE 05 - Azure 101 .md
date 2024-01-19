@@ -1,5 +1,5 @@
 # OBJECTIVE 5 - Azure 101 #
-
+_Completed by 18.9% of challenge participants_
 ## OBJECTIVE : ##
 >Help Sparkle Redberry with some Azure command line skills.  Find the elf and the terminal on Christmas Island.
 #  
