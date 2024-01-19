@@ -84,6 +84,9 @@ Pos|Qty|Top|Mid|Lo
 
 #  
 ## Racing Stats ##
+- Best Racer Overall:  `SEAFALLEN` with **26.7 Points**
+- 1st Runner Up:       `NOODLEBOX` with **23.3 Points**
+- 2nd Runner Up:       `SKYNETDEV` with **13.1 Points**
 
 **Island Shuffle:**
 Rank|Time in Seconds|Player
