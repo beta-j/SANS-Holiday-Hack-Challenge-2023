@@ -1,5 +1,5 @@
 # OBJECTIVE 4 - Reportinator #
-
+_Completed by 9.22% of challenge participants_
 ## OBJECTIVE : ##
 >Noel Boetie used ChatGPT to write a pentest report.  Go to Christmas Island and help him clean it up.
 #  
