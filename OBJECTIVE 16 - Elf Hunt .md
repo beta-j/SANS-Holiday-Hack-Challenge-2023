@@ -1,5 +1,5 @@
 # OBJECTIVE 16 - Elf Hunt #
-
+_Completed by 14.56% of challenge participants_
 ## OBJECTIVE : ##
 >Piney Sappington needs a lesson in JSON web tokens.  Hack Elf Hunt and score 75 points.
 #  
