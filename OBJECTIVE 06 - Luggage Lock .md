@@ -1,5 +1,5 @@
 # OBJECTIVE 6 - Luggage Lock #
-
+_Completed by 10.02% of challenge participants_
 ## OBJECTIVE : ##
 >Help Garland Candlesticks on the Island of Misfit Toys get back into his luggage by finding the correct position for all four dials.
 #  
