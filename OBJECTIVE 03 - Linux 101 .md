@@ -1,4 +1,5 @@
 # OBJECTIVE 3 - Linux 101 #
+_Completed by 44.45% of challenge participants_
 
 ## OBJECTIVE : ##
 >Visit Ginger Breddie in Santa's Shack on Christmas Island to help him with some basic Linux tasks. It's in the southwest corner of Frosty's Beach.
