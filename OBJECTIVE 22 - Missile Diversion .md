@@ -42,7 +42,7 @@ First of all – hats off for including a [Wargames reference](https://i.gifer.c
 
 I pasted the string I found in `satellite_query` as well as the java code in [ChatGPT](https://chat.openai.com/) and from there I learned that the string in the object column is a **serialized java object**.  The Java code retrieved from the results column takes this serialised object as it’s input and parses a SQL query, SQL update or retrieves a file.
 
-I prompted ChatGPT to create a java program that would accept a SQL command as input and would use the [Java code I retrieved](Code/SatelliteQueryFileFolderUtility.java) to prepare a hex string that can be fed back to it as an input.  Using this program I created a hex string for the SQL command ``UPDATE pointing_mode SET numerical_mode = 1 WHERE Id = 1``.
+I prompted ChatGPT to create a java program that would accept a SQL command as input and would use the [Java code I retrieved](Code/SatelliteQueryFileFolderUtility.java) to prepare a hex string that can be fed back to it as an input.  Using [this program](Code/serializer.java) I created a hex string for the SQL command ``UPDATE pointing_mode SET numerical_mode = 1 WHERE Id = 1``.
 I then included the resulting serialized hex in a SQL command to add it as a new entry in `satellite_query` and I pasted this into the `debug` field similarly to how I exfiltrated the database info earlier:
 ```
 ; INSERT INTO satellite_query (jid, object)
