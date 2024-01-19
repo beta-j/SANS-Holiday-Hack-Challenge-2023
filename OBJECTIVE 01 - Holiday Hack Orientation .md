@@ -1,5 +1,5 @@
 # OBJECTIVE 1 - Holiday Hack Orientation #
-
+_Completed by 83.25% of challenge participants_
 ## OBJECTIVE : ##
 >Talk to Jingle Ringford on Christmas Island and get your bearings at Geese Islands
 #  
