@@ -1,7 +1,5 @@
 # SANS Holiday Hack Challenge 2023 Statistics #
-
 _A list of statistics gathered from the "Closing Ceremonies & Winners Announcement" Webcast held afetr the challenge closing date._
-
 #  
 
 ## General stats: ##
@@ -12,9 +10,20 @@ _A list of statistics gathered from the "Closing Ceremonies & Winners Announceme
 -  % of players who completed the challenge:  **1.79%**
 -  Total no. of reports recieved by SANS:  **197**
 
+## Best Overall Answer##
+- Winner: **Jai Minton**
+![image](https://github.com/beta-j/SANS-Holiday-Hack-Challenge-2023/assets/60655500/b4abd3a1-35d7-48ff-a250-72f39b5409ba)
+
+## Best Technical Answer: ##
+- Best Technical Answer:   Bernard Griener
+- Runner Up:       Michael Benedetti
+  
 ## Most Creative Write-Up: ##
 - Most Creative:   Gabriel Quiroz
 - Runner Up:       Erez C 
+
+## Extra Special Noteworthy Exemplary Trophy (ESNET) Award ##
+ESNET Award Winner: **Forbytten**
 
 ## Quickest Players to Complete the Challenge: ##
 -  `PSMITTY` completed the challenge in 47.5 hours
