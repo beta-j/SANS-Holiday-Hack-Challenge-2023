@@ -1,5 +1,5 @@
 # OBJECTIVE 22 - Missile Diversion #
-
+_Completed by 1.88% of challenge participants_
 ## OBJECTIVE : ##
 >Thwart Jack’s evil plan by re-aiming his missile at the Sun.
 #  
