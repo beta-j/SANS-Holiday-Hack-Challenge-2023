@@ -1,5 +1,5 @@
 # BONUS! Fishing Mastery #
-
+_Completed by 1.42% of challenge participants_
 ## OBJECTIVE : ##
 >Catch at least one of each species of fish that live around Geese islands. When you're done, report your findings to Poinsettia McMittens.
 
