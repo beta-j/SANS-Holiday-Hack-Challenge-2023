@@ -1,5 +1,5 @@
 # OBJECTIVE 8 - Faster Lock Combination #
-
+_Completed by 7.58% of challenge participants_
 ## OBJECTIVE : ##
 >Over on Steampunk Island, Bow Ninecandle is having trouble opening a padlock. Do some research and see if you can help open it! 
 #  
