@@ -1,5 +1,5 @@
 # OBJECTIVE 7 - Linux PrivEsc #
-
+_Completed by 13.26% of challenge participants_
 ## OBJECTIVE : ##
 >Rosemold is in Ostrich Saloon on the Island of Misfit Toys.  Give her a hand with escalation for a tip about hidden islands.
 #  
