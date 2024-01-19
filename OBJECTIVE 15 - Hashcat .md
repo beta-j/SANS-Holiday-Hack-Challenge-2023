@@ -1,5 +1,5 @@
 # OBJECTIVE 15 - Hashcat #
-
+_Completed by 18.42% of challenge participants_
 ## OBJECTIVE : ##
 >Eve Snowshoes is trying to recover a password.  Head to the Island of Misfit Toys and take a crack at it!
 #  
