@@ -1,5 +1,5 @@
 # OBJECTIVE 13 - KQL Kraken Hunt #
-
+_Completed by 6.33% of challenge participants_
 ## OBJECTIVE : ##
 >Use Azure Data Explorer to [uncover misdeeds](https://detective.kusto.io/sans2023) in Santa's IT enterprise. Go to Film Noir Island and talk to Tangle Coalbox for more information 
 #  
