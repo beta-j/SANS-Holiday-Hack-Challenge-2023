@@ -1,5 +1,5 @@
 # OBJECTIVE 11 - Game Cartridge Vol 3 #
-
+_Completed by 2.23% of challenge participants_
 ## OBJECTIVE : ##
 >Find the third Gamegosling cartridge and beat the game.
 #  
