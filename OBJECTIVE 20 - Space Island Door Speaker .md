@@ -1,5 +1,5 @@
 # OBJECTIVE 20 - Space Island Door Speaker #
-
+_Completed by 2.82% of challenge participants_
 ## OBJECTIVE : ##
 >There's a door that needs opening on Space Island! Talk to Jewel Loggins there for more information.
 #  
