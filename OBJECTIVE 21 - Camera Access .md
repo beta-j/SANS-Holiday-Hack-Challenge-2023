@@ -1,5 +1,5 @@
 # OBJECTIVE 21 - Camera Access #
-
+_Completed by 2.29% of challenge participants_
 ## OBJECTIVE : ##
 >Gain access to Jack's camera. What's the third item on Jack's TODO list?
 #  
