@@ -1,5 +1,5 @@
 # OBJECTIVE 2 - Snowball Hero #
-
+_Completed by 33.02% of challenge participants_
 ## OBJECTIVE : ##
 >Visit Christmas Island and talk to Morcel Nougat about this great new game. Team up with another player and show Morcel how to win against Santa!
 #  
