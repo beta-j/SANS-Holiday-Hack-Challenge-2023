@@ -1,5 +1,5 @@
 # OBJECTIVE 12 - Na'an #
-
+_Completed by 8.13% of challenge participants_
 ## OBJECTIVE : ##
 >Shifty McShuffles is hustling cards on Film Noir Island. Outwit that meddling elf and win!
 #  
