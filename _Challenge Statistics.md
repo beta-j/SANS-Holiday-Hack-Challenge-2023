@@ -12,13 +12,20 @@ _A list of statistics gathered from the "Closing Ceremonies & Winners Announceme
 -  % of players who completed the challenge:  **1.79%**
 -  Total no. of reports recieved by SANS:  **197**
 
+## Most Creative Write-Up: ##
+- Most Creative:   Gabriel Quiroz
+- Runner Up:       Erez C 
 
-
-## Notable Players ##
-### Quickest ###
+## Quickest Players to Complete the Challenge: ##
 -  `PSMITTY` completed the challenge in 47.5 hours
 -  `STIGWARD` completed the challenge in 69.6 hours
 -  `PEDROCABAL` completed the challenge in 116.8 hours
+
+## 32 Honorable Mentions: ##
+Orin Ag, Rich Alexander, Murat Cakir, RCarras, Ken Clark / Rachel Clark, Andy Davies, Jeff Davies, Brian DeBaggis, Kai-Th. Dusold, Rob Freeman, LethalHack, Tomoomi Iwata, Daniel Kaufmann, Kory Kliner, Dan LaLone, Arin Lee, Lassi Lehtinen, Miguel Llamazares, James Mar, John Matczak, Mark Mulvaney, Munch, Akira Nishikawa, Dan O'Connor, Michael Odom, Jordan Porcella, Brad Priller, Dan Roberts, Joerg Schwarzwaelder, Kristof Tamas, Helen W, Bryan Williams.
+
+## 23 Super Honorable Mentions: ##
+James Baldacchino, Michael Benedetti, Brian Carrick, Adam Coirazza, Darkander, Brian Davidson, Guillermo Lafuente, Andrea Lamonato, David Forsythe, Matthew Furtado, Roger Johnsen, Suppawej Kerdphol & Nuttakorn Dhiraprayudti, Steven Maestas, Philip Naida, Marco Parello, Dale Perkel, Giuseppe Saturno, Shahne, David Szili, Lukasz Sztukowski, Cody Travis, Alex Trylysenko, Thomas XM.
 
 ## Objectives Success Rate ##
 Objectives vs % Players Completed:
