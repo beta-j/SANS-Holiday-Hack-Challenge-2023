@@ -44,7 +44,7 @@ By pasting the output to [jwt.io](https://jwt.io) (or performing a `base64` deco
 
 This confirms that we now have the JWT token required for the `radioMonitor` role.  The logical next step is to edit the contents of the `justWatchThisCookie` and replace it with the JWT for `radioMonitor`. With this new cookie set we can access the waterfall and behold a pretty greeting from SANS – but nothing more without the `radioDecoder` token.
 
-By this point we’re starting to figure out that the Captain is somewhat careless wit how he stores his tokens and keys – so it’s worth just trying to see whether we can get the `radioDecoder.tok` token with the same URI call we used for `radioMonitor.tok`.
+By this point we’re starting to figure out that the Captain is somewhat careless with how he stores his tokens and keys – so it’s worth just trying to see whether we can get the `radioDecoder.tok` token with the same URI call we used for `radioMonitor.tok`.
 
 ```
 $ curl https://captainscomms.com/jwtDefault/rDecoder.tok -H "Authorization: Bearer eyJhb..”
