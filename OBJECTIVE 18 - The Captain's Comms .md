@@ -23,12 +23,12 @@ By intercepting in **BURP** we can see the value of a Bearer token in an authori
 
 From the [Just Watch This: Owner’s Card](Assets/ownCard.png) we also learn that the `radioMonitor` role token is stored in `/jwtDefault/rMonitor.tok` which we can retrieve using `curl` and the bearer token we just got:
 
-```
-curl https://captainscomms.com/jwtDefault/rMonitor.tok -H "Authorization: Bearer eyJhb..."
+```console
+$ curl https://captainscomms.com/jwtDefault/rMonitor.tok -H "Authorization: Bearer eyJhb..."
 ```
 
 By pasting the output to [jwt.io](https://jwt.io) (or performing a `base64` decode) we can see that the JWT we obtained contains the following:
-```
+```json
 {
   "alg": "RS256",
   "typ": "JWT"
@@ -46,7 +46,7 @@ This confirms that we now have the JWT token required for the `radioMonitor` rol
 
 By this point we’re starting to figure out that the Captain is somewhat careless with how he stores his tokens and keys – so it’s worth just trying to see whether we can get the `radioDecoder.tok` token with the same URI call we used for `radioMonitor.tok`.
 
-```
+```console
 $ curl https://captainscomms.com/jwtDefault/rDecoder.tok -H "Authorization: Bearer eyJhb..”
 ```
 
@@ -68,7 +68,7 @@ Next, we need to figure out a way to get the Administrator Role to operate the r
 >“moved the private key to a folder [he] hope[s] no one will find.  [He] created a ‘keys’ folder in the same directory the roleMonitor token is in and put the public key ‘capsPubKey.key‘ there”
 
 So, we can just `curl` to `/jwtDefault/keys/capsPubKey.key` to get the Public Key – easy!
-```
+```console
 $ curl https://captainscomms.com/jwtDefault/keys/capsPubKey.key -H "Authorization: Bearer eyJhbGc..."
 -----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0.....
@@ -78,7 +78,7 @@ MIIBIjANBgkqhkiG9w0.....
 By this point we have a pretty good idea of how the captain stores and names his files so we can hazard a guess that if he named the public key file `capsPubKey.key`, the Private key is probably called `capsPrivKey.key`.  We also learned from the morse transmission that it’s in a folder called `TH3CAPSPR1V4T3F0LD3R`.
 
 We can now quite easily guess at the full URI for the Private Key file:
-```
+```console
 $ curl https://captainscomms.com/jwtDefault/keys/TH3CAPSPR1V4T3F0LD3R/capsPrivKey.key -H "Authorization: Bearer eyJhbGc..."
 -----BEGIN PRIVATE KEY-----
 MIIEvgIBADANBgk...
@@ -88,7 +88,7 @@ MIIEvgIBADANBgk...
 Armed with the Public/Private key pair we can use [jwt.io](https://jwt.io) to create a new JWT for the administrator role.  We just need to guess at what that role might be called.  There are plenty of hints for this in the [Captain’s Log](Assets/captains-Log.png) which lead us to understnd that the administrator’s role is called `GeeseIslandsSuperChiefCommunicationsOfficer`.
 
 Using jwt.io create, encode and sign the following token:
-```
+```json
 {
   "alg": "RS256",
   "typ": "JWT"
