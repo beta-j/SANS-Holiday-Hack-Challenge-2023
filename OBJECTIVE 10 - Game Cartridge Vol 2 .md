@@ -20,7 +20,7 @@ If we look at the `script.js` file in the browser’s console we can see a globa
 
 Further down on line 142 we find the following:
 
-```
+```javascript
   let ranNum = Math.round(Math.random()).toString()
   let filename = ROM_FILENAME + ranNum + ".gb";
   console.log(filename);
@@ -43,7 +43,7 @@ If necessary, the webpage with the game can be reloaded several times until the 
 
 After downloading the two rom files we can covert them using xxd and compare the outputs:
 
-```
+```console
 $ xxd game0.gb > game0.hex
 $ xxd game1.gb > game1.hex
 $ diff game0.hex game1.hex
@@ -51,7 +51,7 @@ $ diff game0.hex game1.hex
 
 If we modify the following entry and run the game:
 
-```
+```console
 Hex0: < 00016a80: 2080 0c80 0300 000f f807 0000 0000 0f10   ...............
 ---
 Hex1: > 00016a80: 2080 0c80 0b00 000f f807 0000 0000 0f10   ...............
