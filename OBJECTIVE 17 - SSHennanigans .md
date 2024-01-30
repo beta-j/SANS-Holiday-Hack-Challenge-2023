@@ -20,7 +20,7 @@ _Completed by 4.63% of challenge participants_
 Alabaster Snowball tells us that he needs our help with his “fancy new Azure server” at ``ssh-server-vm.santaworkshopgeeseislands.org``.  He also tells us that with the help of ChatNPT he has created a website that automatically generates certificates for users and that the website is found at: [https://northpole-ssh-certs-fa.azurewebsites.net/api/create-cert?code=candy-cane-twirl](https://northpole-ssh-certs-fa.azurewebsites.net/api/create-cert?code=candy-cane-twirl).  The [video by Thomas Bouve](https://www.youtube.com/watch?v=4S0Rniyidt4) is very helpful to get started with this one.
 
 First order of business is to go ahead and create a certificate pair using `ssh-keygen` and the command shown in Thomas Bouve’s video:
-```
+```console
 $ Ssh-keygen -C ‘SSH Certificate CA’ -f ca
 ```
 
@@ -29,7 +29,7 @@ This will create two files; `ca` and `ca.pub`. Copy the contents of `ca.pub` int
 We can go ahead and copy this text into a new file called `SSHCert.pub` and adjust permissions using `Chmod 600 SSHCert.pub`.  However, the text needs to be cleaned a bit before we can use this as our certificate file.  Remove the bit of text at the end that reads `“principal”: “elf”` and leave all the rest.  Save the file and we should be ready to connect to the server using our new certificate.
 
 To connect use the following command to specify the private and public key pair to use with ssh:
-```
+```console
 $ ssh -i ca -i SSHCert.pub monitor@ssh-server-vm.santaworkshopgeeseislands.org 
 ```
 
@@ -42,7 +42,7 @@ Hitting the escape sequence `Ctrl+C` brings us to a terminal prompt, and we can 
 Also, by looking into `/etc/ssh/sshd_config.d/sshd_config_certs.conf` we can see that the server is set up to map principles to usernames by looking for the `AuthorizedPrincipalsFile` in `/etc/ssh/auth_principals/%u`.
 
 The logical next step is to have a look at what’s inside the `auth_principals` folder and sure enough we can see two principals; `alabaster` and `monitor`.  By looking into the contents of these two principal files we can see that `alabaster` is mapped to the `admin` user and `monitor` is mapped to the `elf` user.
-```
+```console
 monitor@ssh-server-vm:/etc/ssh/auth_principals$ cat alabaster monitor 
 admin
 elf
@@ -51,30 +51,30 @@ elf
 Just to be sure we can check whether it is possible to edit the monitor principal to give us admin user access, but we do not have sufficient rights to edit the file and we’ll need to be a bit craftier.
 
 So, let’s see what we can learn about the Azure server we’re on.  There is no Azure CLI available but as the hints kindly suggest we can use Azure REST API calls instead. By running the following command, we can retrieve the [Azure Instance Metadata (IMDS)](https://learn.microsoft.com/en-us/azure/virtual-machines/instance-metadata-service?tabs=linux):
-```
+```console
 $ curl -s -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq
 ```
 *    Note: we pipe the output to jq to give us a nicely formatted JSON output.*
 
 This gives us some useful information about the server we’re on.  Most importantly we learn our `subscriptionId` and `Resource Group Name`, which will be useful in the next few steps:
-```
+```console
 "resourceGroupName": "northpole-rg1",   
 "resourceId": "/subscriptions/2b0942f3-9bca-484b-a508-abdae2db5e64/resourceGroups/northpole-rg1/providers/Microsoft.Compute/virtualMachines/ssh-server-vm",   
     "subscriptionId": "2b0942f3-9bca-484b-a508-abdae2db5e64",
 ```
 
 Next, we can go ahead and generate ourselves a token by calling a specific URI (I used `curl` and piped the output to `jq` for readability):
-```
+```console
 $curl 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2021-02-01&resource=https%3A%2F%2Fmanagement.azure.com%2F' -H Metadata:true -s | jq
 ```
 
 This gives us an access_token that starts with `eyJ0...` (I will not be pasting the whole thing here as it’s a long string).  To make things a bit easier for ourselves we can assign the access token to a shell variable called `$TOKEN`:
-```
+```console
 $ TOKEN=eyJ0e.....
 ```
 
 One of the hints for this challenge specifically mentions that we can use the REST API to get more information about the app that is running on the server and where it resides by using `Get Source Control` .  We can do this by calling a URI with the `subscriptionId` and `resourceId` parameters we learned earlier.  The `{name}` parameter is taken from the URL of the app, i.e. `northpole-ssh-certs-fa` and we also need to pass on the `$TOKEN` we generated earlier as a header in our request:
-```
+```console
 $ curl https://management.azure.com/subscriptions/2b0942f3-9bca-484b-a508-abdae2db5e64/resourceGroups/northpole-rg1/providers/Microsoft.Web/sites/northpole-ssh-certs-fa/sourcecontrols/web?api-version=2022-03-01 -H "Authorization:Bearer $TOKEN” | jq 
 ```
 
@@ -97,7 +97,7 @@ Now we need to repeat the initial steps of this challenge with the new certifica
  	
 That’s it! We now have admin access to the server, and we can see alabaster’s to-do list in his home folder, from which we find out that he intends to implement a **“Gingerbread Cookie Cache”**.
 
-```
+```console
 ~$ cat alabaster_todo.md 
 # Geese Islands IT & Security Todo List
 
