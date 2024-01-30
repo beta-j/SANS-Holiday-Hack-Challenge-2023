@@ -29,12 +29,12 @@ At this point it’s a good idea to start a Wireshark capture on interface `wg0`
 At this point we can stop the Wireshark capture and right-click on one of the packets and select **Follow -> TCP Stream**.  It will take a few minutes for wireshark to bring up the full TCP stream as it’s a pretty large image file, but when it’s done we can choose to save it to a file – in my case I called this `output.txt`.
 
 By using the following command I was able to extract the file to my local machine where I could remove any strings that where not part of the `base64` encoded image itself
-```
+```console
 $ docker cp 2bf63a2df16a:/root/output.txt /home/kali`
 ```
 
 Finally it’s just a matter of using `base64 -d` to decode the string and output the result to a .jpg file:
-```
+```console
 $ base64 -d output.txt > image2.jpg
 ```
 That’s it – by zooming in to the image we can see Jack’s To-Do list in all its **glooooooorrryy** 😊
