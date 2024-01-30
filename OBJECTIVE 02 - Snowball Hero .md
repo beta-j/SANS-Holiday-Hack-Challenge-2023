@@ -28,7 +28,8 @@ By inspecting the code in the browser’s console I was able to identify a numbe
 This effectively rendered me invincible and disabled the elves and Santa from throwing any snowballs.  This way I was able to simply wait for someone to join the fight and we could defeat Santa together.
 
 The hints seem to indicate that there should also be a way of defeating Santa on my own  but I didn’t manage to achieve that.  I identified a client-side variable called `singlePlayer` and if I manually set this to `‘true’` before clicking on the Ready button, the game would play a sound saying **“Never Fear! Elf the Dwarf is here!”**  and based on the code snippet below I’m guessing the game should theoretically generate a sprite (`jaredSprite`) to assist me in fighting Santa.  But no matter how many times I tried, the game just froze up completely and became unplayable whenever I changed this variable ☹
-      
+
+```javascript
       ReadyButton.on('pointerdown', function() {
         ReadyButton.destroy();
         scrollintro.destroy()
@@ -46,5 +47,3 @@ The hints seem to indicate that there should also be a way of defeating Santa on
             jaredSprite.setScale(0)
             jaredSprite.setAlpha(0)
             gameSceneObject.tweens.add({
- 
-
