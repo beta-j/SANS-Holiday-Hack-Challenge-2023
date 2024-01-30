@@ -27,7 +27,7 @@ eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJzcGVlZCI6LTUwMH0.
 From the objective hints and the name of the cookie we can safely assume that this is a **JSON Web Token (JWT)** and looking at the source code for `main.js` we can see that the JWT is being split into three parts with the ‘.’ Acting as a delimiter.  
 The inline comments conveniently let us know that the second part contains the payload.
 
-```
+```javascript
 function parseJwtPayload(token) {
   // Split the JWT into its three parts
   const parts = token.split('.');
