@@ -34,7 +34,7 @@ ESNET Award Winner: **Forbytten**
 Orin Ag, Rich Alexander, Murat Cakir, RCarras, Ken Clark / Rachel Clark, Andy Davies, Jeff Davies, Brian DeBaggis, Kai-Th. Dusold, Rob Freeman, LethalHack, Tomoomi Iwata, Daniel Kaufmann, Kory Kliner, Dan LaLone, Arin Lee, Lassi Lehtinen, Miguel Llamazares, James Mar, John Matczak, Mark Mulvaney, Munch, Akira Nishikawa, Dan O'Connor, Michael Odom, Jordan Porcella, Brad Priller, Dan Roberts, Joerg Schwarzwaelder, Kristof Tamas, Helen W, Bryan Williams.
 
 ## 23 Super Honorable Mentions: ##
-James Baldacchino, Michael Benedetti, Brian Carrick, Adam Coirazza, Darkander, Brian Davidson, Guillermo Lafuente, Andrea Lamonato, David Forsythe, Matthew Furtado, Roger Johnsen, Suppawej Kerdphol & Nuttakorn Dhiraprayudti, Steven Maestas, Philip Naida, Marco Parello, Dale Perkel, Giuseppe Saturno, Shahne, David Szili, Lukasz Sztukowski, Cody Travis, Alex Trylysenko, Thomas XM.
+**James Baldacchino**, Michael Benedetti, Brian Carrick, Adam Coirazza, Darkander, Brian Davidson, Guillermo Lafuente, Andrea Lamonato, David Forsythe, Matthew Furtado, Roger Johnsen, Suppawej Kerdphol & Nuttakorn Dhiraprayudti, Steven Maestas, Philip Naida, Marco Parello, Dale Perkel, Giuseppe Saturno, Shahne, David Szili, Lukasz Sztukowski, Cody Travis, Alex Trylysenko, Thomas XM.
 
 ## Objectives Success Rate ##
 Objectives vs % Players Completed:
