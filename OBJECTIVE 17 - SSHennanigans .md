@@ -17,7 +17,7 @@ _Completed by 4.63% of challenge participants_
 
 ## PROCEDURE : ##
 
-Alabaster Snowball tells us that he needs our help with his “fancy new Azure server” at ``ssh-server-vm.santaworkshopgeeseislands.org``.  He also tells us that with the help of ChatNPT he has created a website that automatically generates certificates for users and that the website is found at: [https://northpole-ssh-certs-fa.azurewebsites.net/api/create-cert?code=candy-cane-twirl](https://northpole-ssh-certs-fa.azurewebsites.net/api/create-cert?code=candy-cane-twirl).  The [video by Thomas Bouve](https://www.youtube.com/watch?v=4S0Rniyidt4) is very helpful to get started with this one.
+Alabaster Snowball tells us that he needs our help with his “fancy new Azure server” at ``ssh-server-vm.santaworkshopgeeseislands.org``.  He also tells us that with the help of ChatNPT he has created a website that automatically generates certificates for users and that the website is found at: [https://northpole-ssh-certs-fa.azurewebsites.net/api/create-cert?code=candy-cane-twirl](https://northpole-ssh-certs-fa.azurewebsites.net/api/create-cert?code=candy-cane-twirl).  This [video by Thomas Bouve](https://www.youtube.com/watch?v=4S0Rniyidt4) is very helpful to get started with this one.
 
 First order of business is to go ahead and create a certificate pair using `ssh-keygen` and the command shown in Thomas Bouve’s video:
 ```console
